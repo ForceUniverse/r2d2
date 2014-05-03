@@ -1,5 +1,5 @@
 name: r2d2
-version: 0.0.1+1
+version: 0.0.2
 author: Joris Hermans <hermansj@gmail.com>
 description: A modern device detection package
 homepage: https://github.com/jorishermans/r2d2
