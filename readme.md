@@ -1,14 +1,14 @@
-### Dart Force Mirrors ###
+### R2D2 ###
 
 ![LOGO!](https://raw.github.com/jorishermans/dart-force/master/resources/dart_force_logo.jpg)
 
 Part of the Dart Force Framework.
 
-A library to detect on witch device you are!
+A library to detect the device you are on!
 
 #### Walkthrough ####
 
-
+Work in progress ...
 
 ### Notes to Contributors ###
 
