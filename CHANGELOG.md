@@ -2,7 +2,7 @@
 
 This file contains highlights of what changes on each version of the forcemvc package. 
 
-#### Pub version 0.0.2 ####
+#### Pub version 0.0.3 ####
 
 Added some basic tests and fixed some bugs
 
