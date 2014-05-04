@@ -1,10 +1,10 @@
 part of artoo_server;
 
-class ServerDevice extends DeviceFace {
+class ServerDetectDevice extends DeviceFace {
   
   String _user_agent;
   
-  ServerDevice(HttpRequest req) {
+  ServerDetectDevice(HttpRequest req) {
     _user_agent = req.headers.value("User-Agent");
   }
   

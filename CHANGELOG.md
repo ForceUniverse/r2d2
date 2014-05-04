@@ -4,6 +4,10 @@ This file contains highlights of what changes on each version of the forcemvc pa
 
 #### Pub version 0.0.2 ####
 
+Added some basic tests and fixed some bugs
+
+#### Pub version 0.0.2 ####
+
 Adding server & client device information logic
 
 #### Pub version 0.0.1 ####

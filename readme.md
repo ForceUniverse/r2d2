@@ -8,7 +8,19 @@ A library to detect the device you are on!
 
 #### Walkthrough ####
 
-Work in progress ...
+This is how you setup and use device detection clientside:
+
+	ClientDetectDevice cd = new ClientDetectDevice();
+	cd.isTablet();
+	cd.isMobile();
+	cd.isDesktop();
+	
+This is how you setup and use device detection serverside:
+
+	ServerDetectDevice cd = new ServerDetectDevice();
+	cd.isTablet();
+	cd.isMobile();
+	cd.isDesktop();
 
 ### Notes to Contributors ###
 

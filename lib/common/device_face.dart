@@ -5,15 +5,15 @@ abstract class DeviceFace {
   String userAgent();
   
   bool isMobile() {
-     return _find("iphone") || androidPhone() || _find("mobile") || _find("meego") || _find("phone") || blackberryPhone();
+     return _find("iPhone;") || _find("iPod;") || androidPhone() || _find("mobile") || _find("meego") || _find("phone") || blackberryPhone();
   }
   
   bool isTablet() {
-     return windowsTablet() || blackberryTablet() || androidTablet() || _find('ipad') || _find('tablet') ;   
+     return windowsTablet() || blackberryTablet() || androidTablet() || _find('iPad;') || _find('tablet') ;   
   }
   
   bool isDesktop() {
-    return !isMobile() || !isTablet();
+    return !isMobile() && !isTablet();
   }
   
   bool blackberry() {
@@ -45,7 +45,7 @@ abstract class DeviceFace {
   }
   
   bool androidPhone() {
-    return android && _find('mobile');
+    return android() && _find('mobile');
   }
   
   bool androidTablet() {

@@ -1,10 +1,10 @@
 part of artoo_client;
 
-class ClientDevice extends DeviceFace {
+class ClientDetectDevice extends DeviceFace {
   
   String _user_agent;
   
-  ClientDevice() {
+  ClientDetectDevice() {
     _user_agent = window.navigator.userAgent;
   }
   
