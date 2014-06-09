@@ -1,0 +1,1 @@
+{"name":"artoo_server","qualifiedName":"r2d2/artoo_server","comment":"","variables":{},"functions":{"setters":{},"getters":{},"constructors":{},"operators":{},"methods":{}},"classes":{"class":[{"name":"ServerDetectDevice","qualifiedName":"r2d2/artoo_server.ServerDetectDevice"}],"typedef":{},"error":[]},"packageName":"r2d2","packageIntro":""}
