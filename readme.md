@@ -22,6 +22,10 @@ This is how you setup and use device detection serverside:
 	cd.isMobile();
 	cd.isDesktop();
 
+### Api documents ###
+
+You can find them [here](https://jorishermans.github.io/r2d2/api/index.html) 
+
 ### Notes to Contributors ###
 
 #### Fork R2D2 ####
