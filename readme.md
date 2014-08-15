@@ -36,7 +36,7 @@ If you are new to Git or GitHub, please read [this guide](https://help.github.co
 
 #### Dart Force ####
 
-Realtime web framework for dart that uses forcemvc & forcemirrors [source code](https://github.com/jorishermans/dart-force)
+Realtime web framework for dart that uses forcemvc & forcemirrors & force_it [source code](https://github.com/jorishermans/dart-force)
 
 #### Twitter ####
 
