@@ -27,10 +27,12 @@ class LiteDeviceResolver implements DeviceResolver {
 
   LiteDeviceResolver({List<String> normalUserAgentKeywords}) {
     init();
-    this.normalUserAgentKeywords.addAll(normalUserAgentKeywords);
+    if (normalUserAgentKeywords!=null) {
+      this.normalUserAgentKeywords.addAll(normalUserAgentKeywords);
+    }
   }
 
-  Device resolveDevice(String userAgent, Map<String, String> headers) {
+  Device resolveDevice(String userAgent, Map<String, List<String>> headers) {
     // UserAgent keyword detection of Normal devices
     Device device = new Device(false, false, true);
     if (userAgent != null) {
@@ -59,8 +61,8 @@ class LiteDeviceResolver implements DeviceResolver {
       }
     }
     // UAProf detection
-    if (headers.contains("x-wap-profile")
-        || headers.contains("Profile")) {
+    if (headers.containsKey("x-wap-profile")
+        || headers.containsKey("Profile")) {
       return new Device(true, false, false);
     }
     // User-Agent prefix detection
@@ -71,9 +73,12 @@ class LiteDeviceResolver implements DeviceResolver {
       }
     }
     // Accept-header based detection
-    String accept = headers["Accept"];
-    if (accept != null && accept.contains("wap")) {
-      return new Device(true, false, false);
+    List lstAccept = headers["Accept"];
+    if (lstAccept != null) {
+      String accept = lstAccept.first;
+      if (accept != null && accept.contains("wap")) {
+        return new Device(true, false, false);
+      }
     }
     // UserAgent keyword detection for Mobile devices
     if (userAgent != null) {

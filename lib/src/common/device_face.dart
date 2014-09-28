@@ -4,16 +4,25 @@ abstract class DeviceFace {
   
   String userAgent();
   
+  Device device;
+  
+  void init(String userAgent, Map<String, List<String>> headers, {DeviceResolver deviceResolver}) {
+    if (deviceResolver==null) {
+        deviceResolver = new LiteDeviceResolver();
+    }    
+    device = deviceResolver.resolveDevice(userAgent, headers);
+  }
+  
   bool isMobile() {
-     return _find("iPhone;") || _find("iPod;") || androidPhone() || _find("mobile") || _find("meego") || _find("phone") || blackberryPhone();
+     return device.mobile;
   }
   
   bool isTablet() {
-     return windowsTablet() || blackberryTablet() || androidTablet() || _find('iPad;') || _find('tablet') ;   
+     return device.tablet;   
   }
   
   bool isDesktop() {
-    return !isMobile() && !isTablet();
+    return device.desktop;
   }
   
   bool blackberry() {
