@@ -2,6 +2,10 @@
 
 This file contains highlights of what changes on each version of the forcemvc package. 
 
+#### Pub version 0.0.4 ####
+
+Restructure code
+
 #### Pub version 0.0.3+1 ####
 
 Moving the repo on github
