@@ -2,6 +2,10 @@
 
 This file contains highlights of what changes on each version of the forcemvc package. 
 
+#### Pub version 0.1.0 ####
+
+Improved the code with more advanced algorithms to resolve a device.
+
 #### Pub version 0.0.4 ####
 
 Restructure code
