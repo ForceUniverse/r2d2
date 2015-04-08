@@ -2,8 +2,6 @@
 
 ![LOGO!](https://raw.github.com/ForceUniverse/dart-force/master/resources/dart_force_logo.jpg)
 
-Part of the Dart Force Framework.
-
 A library to detect the device you are on!
 
 #### Walkthrough ####
