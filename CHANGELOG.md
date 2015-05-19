@@ -2,7 +2,7 @@
 
 This file contains highlights of what changes on each version of the r2d2 package. 
 
-#### Pub version 0.1.0 ####
+#### Pub version 0.1.1 ####
 
 Update dependencies.
 
