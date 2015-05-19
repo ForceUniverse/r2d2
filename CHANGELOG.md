@@ -1,6 +1,10 @@
 ### Changelog ###
 
-This file contains highlights of what changes on each version of the forcemvc package. 
+This file contains highlights of what changes on each version of the r2d2 package. 
+
+#### Pub version 0.1.0 ####
+
+Update dependencies.
 
 #### Pub version 0.1.0 ####
 
